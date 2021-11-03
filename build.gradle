@@ -22,7 +22,10 @@ buildscript {
         gradleVersion = '4.1.0'
         supportlibVersion = '1.2.0'
         dataBindingCompilerVersion = gradleVersion // Always need to be the same.
+<<<<<<< HEAD
         navigationVersion = '2.3.5'
+=======
+>>>>>>> 3e6ed54f915e61fbcbc37fd02aeece3ea90041e6
     }
     repositories {
         google()
@@ -31,6 +34,10 @@ buildscript {
     dependencies {
         classpath "com.android.tools.build:gradle:$gradleVersion"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31"
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3e6ed54f915e61fbcbc37fd02aeece3ea90041e6
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }

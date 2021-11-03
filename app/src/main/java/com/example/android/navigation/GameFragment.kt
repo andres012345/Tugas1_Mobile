@@ -23,18 +23,27 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+<<<<<<< HEAD
 import androidx.navigation.findNavController
+=======
+>>>>>>> 3e6ed54f915e61fbcbc37fd02aeece3ea90041e6
 import com.example.android.navigation.databinding.FragmentGameBinding
 
 class GameFragment : Fragment() {
     data class Question(
+<<<<<<< HEAD
         val text: String,
         val answers: List<String>)
+=======
+            val text: String,
+            val answers: List<String>)
+>>>>>>> 3e6ed54f915e61fbcbc37fd02aeece3ea90041e6
 
     // The first answer is the correct one.  We randomize the answers before showing the text.
     // All questions must have four answers.  We'd want these to contain references to string
     // resources so we could internationalize. (Or better yet, don't define the questions in code...)
     private val questions: MutableList<Question> = mutableListOf(
+<<<<<<< HEAD
         Question(text = "What is Android Jetpack?",
             answers = listOf("All of these", "Tools", "Documentation", "Libraries")),
         Question(text = "What is the base class for layouts?",
@@ -55,6 +64,28 @@ class GameFragment : Fragment() {
             answers = listOf("intent-filter", "app-registry", "launcher-registry", "app-launcher")),
         Question(text = "What do you use to mark a layout for data binding?",
             answers = listOf("<layout>", "<binding>", "<data-binding>", "<dbinding>"))
+=======
+            Question(text = "What is Android Jetpack?",
+                    answers = listOf("All of these", "Tools", "Documentation", "Libraries")),
+            Question(text = "What is the base class for layouts?",
+                    answers = listOf("ViewGroup", "ViewSet", "ViewCollection", "ViewRoot")),
+            Question(text = "What layout do you use for complex screens?",
+                    answers = listOf("ConstraintLayout", "GridLayout", "LinearLayout", "FrameLayout")),
+            Question(text = "What do you use to push structured data into a layout?",
+                    answers = listOf("Data binding", "Data pushing", "Set text", "An OnClick method")),
+            Question(text = "What method do you use to inflate layouts in fragments?",
+                    answers = listOf("onCreateView()", "onActivityCreated()", "onCreateLayout()", "onInflateLayout()")),
+            Question(text = "What's the build system for Android?",
+                    answers = listOf("Gradle", "Graddle", "Grodle", "Groyle")),
+            Question(text = "Which class do you use to create a vector drawable?",
+                    answers = listOf("VectorDrawable", "AndroidVectorDrawable", "DrawableVector", "AndroidVector")),
+            Question(text = "Which one of these is an Android navigation component?",
+                    answers = listOf("NavController", "NavCentral", "NavMaster", "NavSwitcher")),
+            Question(text = "Which XML element lets you register an activity with the launcher activity?",
+                    answers = listOf("intent-filter", "app-registry", "launcher-registry", "app-launcher")),
+            Question(text = "What do you use to mark a layout for data binding?",
+                    answers = listOf("<layout>", "<binding>", "<data-binding>", "<dbinding>"))
+>>>>>>> 3e6ed54f915e61fbcbc37fd02aeece3ea90041e6
     )
 
 
@@ -69,7 +100,11 @@ class GameFragment : Fragment() {
 
         // Inflate the layout for this fragment
         val binding = DataBindingUtil.inflate<FragmentGameBinding>(
+<<<<<<< HEAD
             inflater, R.layout.fragment_game, container, false)
+=======
+                inflater, R.layout.fragment_game, container, false)
+>>>>>>> 3e6ed54f915e61fbcbc37fd02aeece3ea90041e6
 
         // Shuffles the questions and sets the question index to the first question.
         randomizeQuestions()
@@ -100,6 +135,7 @@ class GameFragment : Fragment() {
                         binding.invalidateAll()
                     } else {
                         // We've won!  Navigate to the gameWonFragment.
+<<<<<<< HEAD
                         view.findNavController()
                             .navigate(R.id.action_gameFragment_to_gameWonFragment)
                     }
@@ -107,6 +143,11 @@ class GameFragment : Fragment() {
                     // Game over! A wrong answer sends us to the gameOverFragment.
                     view.findNavController()
                         .navigate(R.id.action_gameFragment_to_gameOverFragment)
+=======
+                    }
+                } else {
+                    // Game over! A wrong answer sends us to the gameOverFragment.
+>>>>>>> 3e6ed54f915e61fbcbc37fd02aeece3ea90041e6
                 }
             }
         }

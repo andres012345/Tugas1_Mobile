@@ -22,7 +22,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+<<<<<<< HEAD
 import androidx.navigation.findNavController
+=======
+>>>>>>> 3e6ed54f915e61fbcbc37fd02aeece3ea90041e6
 import com.example.android.navigation.databinding.FragmentGameWonBinding
 
 
@@ -31,11 +34,15 @@ class GameWonFragment : Fragment() {
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         val binding: FragmentGameWonBinding = DataBindingUtil.inflate(
+<<<<<<< HEAD
             inflater, R.layout.fragment_game_won, container, false)
 
         binding.nextMatchButton.setOnClickListener { view: View ->
             view.findNavController().navigate(R.id.action_gameWonFragment_to_gameFragment)
         }
+=======
+                inflater, R.layout.fragment_game_won, container, false)
+>>>>>>> 3e6ed54f915e61fbcbc37fd02aeece3ea90041e6
         return binding.root
     }
 }

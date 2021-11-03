@@ -5,8 +5,13 @@
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0c8e68921dcaefe82efe741384482615/coordinatorlayout-1.1.0/jars/classes.jar!/" />
+<<<<<<< HEAD
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0c8e68921dcaefe82efe741384482615/coordinatorlayout-1.1.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0c8e68921dcaefe82efe741384482615/coordinatorlayout-1.1.0/AndroidManifest.xml" />
+=======
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0c8e68921dcaefe82efe741384482615/coordinatorlayout-1.1.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0c8e68921dcaefe82efe741384482615/coordinatorlayout-1.1.0/res" />
+>>>>>>> 3e6ed54f915e61fbcbc37fd02aeece3ea90041e6
     </CLASSES>
     <JAVADOC />
     <SOURCES>
